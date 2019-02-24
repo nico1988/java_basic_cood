@@ -1,9 +1,9 @@
 /*
-ÓÀÔ¶Í£²»ÏÂÀ´µÄÑ­»·£¬½Ð×öËÀÑ­»·¡£
+æ°¸è¿œåœä¸ä¸‹æ¥çš„å¾ªçŽ¯ï¼Œå«åšæ­»å¾ªçŽ¯ã€‚
 
-ËÀÑ­»·µÄ±ê×¼¸ñÊ½£º
+æ­»å¾ªçŽ¯çš„æ ‡å‡†æ ¼å¼ï¼š
 while (true) {
-	Ñ­»·Ìå
+	å¾ªçŽ¯ä½“
 }
 */
 public class Demo16DeadLoop {

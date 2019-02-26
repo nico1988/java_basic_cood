@@ -20,7 +20,7 @@ public class Demo01Thread {
         //4.调用Thread类中的方法start方法,开启新的线程,执行run方法
         mt.start();
 
-        for (int i = 0; i <20 ; i++) {
+        for (int i = 0; i <20000 ; i++) {
             System.out.println("main:"+i);
         }
     }

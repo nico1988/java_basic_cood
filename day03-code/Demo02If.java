@@ -1,13 +1,13 @@
-// µ¥ifÓï¾ä
+// å•ifè¯­å¥
 public class Demo02If {
 	public static void main(String[] args) {
-		System.out.println("½ñÌìÌìÆø²»´í£¬ÕıÔÚÑ¹ÂíÂ·¡­¡­Í»È»·¢ÏÖÒ»¸ö¿ìÀÖµÄµØ·½£ºÍø°É");
+		System.out.println("ä»Šå¤©å¤©æ°”ä¸é”™ï¼Œæ­£åœ¨å‹é©¬è·¯â€¦â€¦çªç„¶å‘ç°ä¸€ä¸ªå¿«ä¹çš„åœ°æ–¹ï¼šç½‘å§");
 		int age = 19;
 		if (age >= 18) {
-			System.out.println("½øÈëÍø°É£¬¿ªÊ¼high£¡");
-			System.out.println("Óöµ½ÁËÒ»ÈºÖí¶ÓÓÑ£¬¿ªÊ¼Âî½Ö¡£");
-			System.out.println("¸Ğ¾õ²»Ë¬£¬½áÕË×ßÈË¡£");
+			System.out.println("è¿›å…¥ç½‘å§ï¼Œå¼€å§‹highï¼");
+			System.out.println("é‡åˆ°äº†ä¸€ç¾¤çŒªé˜Ÿå‹ï¼Œå¼€å§‹éª‚è¡—ã€‚");
+			System.out.println("æ„Ÿè§‰ä¸çˆ½ï¼Œç»“è´¦èµ°äººã€‚");
 		}
-		System.out.println("»Ø¼Ò³Ô·¹");
+		System.out.println("å›å®¶åƒé¥­");
 	}
 }

@@ -36,7 +36,6 @@ public class Demo01File {
          */
         String pathSeparator = File.pathSeparator; // 路径分割符， windows为； linux为:
         System.out.println(pathSeparator);//路径分隔符 windows:分号;  linux:冒号:
-
         String separator = File.separator;
         System.out.println(separator);// 文件名称分隔符 windows:反斜杠\  linux:正斜杠/
     }

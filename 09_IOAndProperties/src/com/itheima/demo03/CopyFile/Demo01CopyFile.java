@@ -20,7 +20,7 @@ import java.io.IOException;
  */
 public class Demo01CopyFile {
     public static void main(String[] args) throws IOException {
-        long s = System.currentTimeMillis();
+        long s = System.currentTimeMillis(); // javascript new Date().getTime();
         //1.创建一个字节输入流对象,构造方法中绑定要读取的数据源
         FileInputStream fis = new FileInputStream("/home/nico/demo.png");
         //2.创建一个字节输出流对象,构造方法中绑定要写入的目的地

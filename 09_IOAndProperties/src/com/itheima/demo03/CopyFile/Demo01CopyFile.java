@@ -32,7 +32,6 @@ public class Demo01CopyFile {
             //4.使用字节输出流中的方法write,把读取到的字节写入到目的地的文件中
             fos.write(len);
         }*/
-
         //使用数组缓冲读取多个字节,写入多个字节
         byte[] bytes = new byte[1024];
         //3.使用字节输入流对象中的方法read读取文件

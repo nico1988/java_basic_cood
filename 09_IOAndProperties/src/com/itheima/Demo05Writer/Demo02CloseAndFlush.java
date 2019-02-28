@@ -24,6 +24,6 @@ public class Demo02CloseAndFlush {
         fw.close();
 
         //close方法之后流已经关闭了,已经从内存中消失了,流就不能再使用了
-        fw.write(99);//IOException: Stream closed
+//        fw.write(99);//IOException: Stream closed
     }
 }

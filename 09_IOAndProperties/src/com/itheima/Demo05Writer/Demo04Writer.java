@@ -18,11 +18,14 @@ import java.io.IOException;
  */
 public class Demo04Writer {
     public static void main(String[] args) throws IOException {
-        FileWriter fw = new FileWriter("09_IOAndProperties\\g.txt",true);
-        for (int i = 0; i <10 ; i++) {
+        FileWriter fw = new FileWriter("g.txt",true);
+        long s = System.currentTimeMillis();
+        for (int i = 0; i <100000 ; i++) {
             fw.write("HelloWorld"+i+"\r\n");
+            fw.flush();
         }
-
+        long e = System.currentTimeMillis();
+        System.out.println("总共运行：" + (e-s) + " 毫秒");
         fw.close();
     }
 }

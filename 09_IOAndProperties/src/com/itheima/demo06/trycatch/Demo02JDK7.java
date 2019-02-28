@@ -19,9 +19,9 @@ import java.io.IOException;
 public class Demo02JDK7 {
     public static void main(String[] args) {
         try(//1.创建一个字节输入流对象,构造方法中绑定要读取的数据源
-            FileInputStream fis = new FileInputStream("c:\\1.jpg");
+            FileInputStream fis = new FileInputStream("1.jpg");
             //2.创建一个字节输出流对象,构造方法中绑定要写入的目的地
-            FileOutputStream fos = new FileOutputStream("d:\\1.jpg");){
+            FileOutputStream fos = new FileOutputStream("2.jpg");){
 
             //可能会产出异常的代码
             //一次读取一个字节写入一个字节的方式

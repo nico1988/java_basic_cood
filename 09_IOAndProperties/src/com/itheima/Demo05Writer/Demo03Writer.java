@@ -25,7 +25,7 @@ public class Demo03Writer {
 
         //void write(String str, int off, int len) 写入字符串的某一部分,off字符串的开始索引,len写的字符个数。
         fw.write("黑马程序员",2,3);//程序员
-
+        fw.write("nico hello");
         fw.close();
     }
 }

@@ -2,6 +2,7 @@ package com.itheima.demo01.OutputStream;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.lang.reflect.Array;
 
 /*
     追加写/续写:使用两个参数的构造方法
@@ -19,7 +20,7 @@ import java.io.IOException;
  */
 public class Demo03OutputStream {
     public static void main(String[] args) throws IOException {
-        FileOutputStream fos = new FileOutputStream("09_IOAndProperties\\c.txt",true);
+        FileOutputStream fos = new FileOutputStream("c.txt",true);
         for (int i = 1; i <=10 ; i++) {
             fos.write("你好".getBytes());
             fos.write("\r\n".getBytes());

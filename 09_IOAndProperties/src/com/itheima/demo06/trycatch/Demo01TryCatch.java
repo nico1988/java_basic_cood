@@ -23,7 +23,7 @@ public class Demo01TryCatch {
         FileWriter fw = null;
         try{
             //可能会产出异常的代码
-            fw = new FileWriter("w:\\09_IOAndProperties\\g.txt",true);
+            fw = new FileWriter("g.txt",true);
             for (int i = 0; i <10 ; i++) {
                 fw.write("HelloWorld"+i+"\r\n");
             }

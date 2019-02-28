@@ -37,7 +37,7 @@ import java.io.IOException;
 public class Demo01InputStream {
     public static void main(String[] args) throws IOException {
         //1.创建FileInputStream对象,构造方法中绑定要读取的数据源
-        FileInputStream fis = new FileInputStream("09_IOAndProperties\\c.txt");
+        FileInputStream fis = new FileInputStream("c.txt");
         //2.使用FileInputStream对象中的方法read,读取文件
         //int read()读取文件中的一个字节并返回,读取到文件的末尾返回-1
         /*int len = fis.read();

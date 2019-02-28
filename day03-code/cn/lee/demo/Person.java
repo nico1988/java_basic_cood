@@ -1,6 +1,6 @@
 package cn.lee.demo;
 
-public class Person {
+public class Person{
     public String name;
     public Integer age;
 

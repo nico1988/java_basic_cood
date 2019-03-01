@@ -1,5 +1,6 @@
 package com.itheima.demo07.Prop;
 
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
@@ -48,6 +49,12 @@ public class Demo01Properties {
         for (String key : set) {
             String value = prop.getProperty(key);
             System.out.println(key+"="+value);
+        }
+        Properties pr = new Properties();
+        pr.load(new FileInputStream("09_IOAndProperties\\prop.txt"));
+        Set<String> set2 = pr.stringPropertyNames();
+        for (String key : set2) {
+            String value = pr.getProperty(key);
         }
     }
 

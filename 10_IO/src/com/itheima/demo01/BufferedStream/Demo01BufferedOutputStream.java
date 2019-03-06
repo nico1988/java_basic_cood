@@ -36,7 +36,7 @@ public class Demo01BufferedOutputStream {
         //2.创建BufferedOutputStream对象,构造方法中传递FileOutputStream对象对象,提高FileOutputStream对象效率
         BufferedOutputStream bos = new BufferedOutputStream(fos);
         //3.使用BufferedOutputStream对象中的方法write,把数据写入到内部缓冲区中
-        bos.write("我把数据写入到内部缓冲区中".getBytes());
+        bos.write("我是nico,把数据写入到内部缓冲区中".getBytes());
         //4.使用BufferedOutputStream对象中的方法flush,把内部缓冲区中的数据,刷新到文件中
         bos.flush();
         //5.释放资源(会先调用flush方法刷新数据,第4部可以省略)

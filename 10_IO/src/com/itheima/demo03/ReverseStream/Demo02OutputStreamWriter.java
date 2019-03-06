@@ -30,8 +30,8 @@ import java.io.OutputStreamWriter;
  */
 public class Demo02OutputStreamWriter {
     public static void main(String[] args) throws IOException {
-        write_utf_8();
-//        write_gbk();
+        //write_utf_8();
+        write_gbk();
     }
 
     /*
@@ -39,12 +39,9 @@ public class Demo02OutputStreamWriter {
     */
     private static void write_gbk() throws IOException {
         //1.创建OutputStreamWriter对象,构造方法中传递字节输出流和指定的编码表名称
-        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("gbk.txt"),"GBK");
+        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("10_IO\\gbk.txt"),"GBK");
         //2.使用OutputStreamWriter对象中的方法write,把字符转换为字节存储缓冲区中(编码)
         osw.write("你好");
-        osw.write("hello");
-        osw.write("hello");
-        osw.write("hello");
         //3.使用OutputStreamWriter对象中的方法flush,把内存缓冲区中的字节刷新到文件中(使用字节流写字节的过程)
         osw.flush();
         //4.释放资源
@@ -59,7 +56,7 @@ public class Demo02OutputStreamWriter {
         //OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("10_IO\\utf_8.txt"),"utf-8");
         OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("10_IO\\utf_8.txt"));//不指定默认使用UTF-8
         //2.使用OutputStreamWriter对象中的方法write,把字符转换为字节存储缓冲区中(编码)
-        osw.write("11");
+        osw.write("你好");
         //3.使用OutputStreamWriter对象中的方法flush,把内存缓冲区中的字节刷新到文件中(使用字节流写字节的过程)
         osw.flush();
         //4.释放资源

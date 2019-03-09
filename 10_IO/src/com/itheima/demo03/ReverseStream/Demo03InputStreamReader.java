@@ -38,8 +38,7 @@ public class Demo03InputStreamReader {
     private static void read_gbk() throws IOException {
         //1.创建InputStreamReader对象,构造方法中传递字节输入流和指定的编码表名称
         //InputStreamReader isr = new InputStreamReader(new FileInputStream("10_IO\\gbk.txt"),"UTF-8");//???
-        InputStreamReader isr = new InputStreamReader(new FileInputStream("10_IO\\gbk.txt"),"GBK");//你好
-
+        InputStreamReader isr = new InputStreamReader(new FileInputStream("gbk.txt"),"GBK");//你好
         //2.使用InputStreamReader对象中的方法read读取文件
         int len = 0;
         while((len = isr.read())!=-1){
@@ -55,7 +54,7 @@ public class Demo03InputStreamReader {
     private static void read_utf_8() throws IOException {
         //1.创建InputStreamReader对象,构造方法中传递字节输入流和指定的编码表名称
         //InputStreamReader isr = new InputStreamReader(new FileInputStream("10_IO\\utf_8.txt"),"UTF-8");
-        InputStreamReader isr = new InputStreamReader(new FileInputStream("10_IO\\utf_8.txt"));//不指定默认使用UTF-8
+        InputStreamReader isr = new InputStreamReader(new FileInputStream("utf_8.txt"));//不指定默认使用UTF-8
         //2.使用InputStreamReader对象中的方法read读取文件
         int len = 0;
         while((len = isr.read())!=-1){
@@ -64,4 +63,5 @@ public class Demo03InputStreamReader {
         //3.释放资源
         isr.close();
     }
+
 }

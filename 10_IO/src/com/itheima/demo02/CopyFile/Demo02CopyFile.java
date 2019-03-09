@@ -23,9 +23,9 @@ public class Demo02CopyFile {
     public static void main(String[] args) throws IOException {
         long s = System.currentTimeMillis();
         //1.创建字节缓冲输入流对象,构造方法中传递字节输入流
-        BufferedInputStream bis = new BufferedInputStream(new FileInputStream("c:\\1.jpg"));
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream("ZipFile.zip"));
         //2.创建字节缓冲输出流对象,构造方法中传递字节输出流
-        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("d:\\1.jpg"));
+        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("ZipFile01.zip"));
         //3.使用字节缓冲输入流对象中的方法read,读取文件
         //一次读取一个字节写入一个字节的方式
         /*int len = 0;
@@ -44,6 +44,12 @@ public class Demo02CopyFile {
         bis.close();
 
         long e = System.currentTimeMillis();
+        for (int i = 0; i < 100; i++) {
+            System.out.println(e);
+        }
+        System.out.println(e);
+
+
         System.out.println("复制文件共耗时:"+(e-s)+"毫秒");
     }
 }
